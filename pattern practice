@@ -1,0 +1,90 @@
+//pattern 8
+void print8(){
+    int n; 
+    cin>>n;
+    for(int i=1; i<=2*n-1; i++){
+        int stars=i;
+        if(i>n) stars=2*n-i;
+        for(int j=1; j<=stars; j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+}
+
+5
+*
+**
+***
+****
+*****
+****
+***
+**
+* 
+
+
+//pattern 9
+void print9(){
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+        if((i+j)%2==0){
+            cout<<"1";
+        }else{
+            cout<<"0";
+        }
+        }
+        cout<<endl;
+        
+        
+    }
+}
+
+or,
+void print9(){
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        int start;
+        start=1;
+        if(i%2==0) start=0;
+        for(int j=1; j<=i; j++){
+            cout<<start;
+            start= 1-start;
+        }
+        cout<<endl;
+    }
+}
+5
+1
+01
+101
+0101
+10101
+
+pattern 10
+void print10(){
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+        cout<<"1";
+        if((i+j)%2!=0) cout<<"0";
+        }
+        cout<<endl;
+        
+        
+    }
+}
+it prints:-
+5
+1
+101
+1101
+101101
+1101101
+
+
