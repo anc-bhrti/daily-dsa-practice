@@ -1,4 +1,4 @@
-//digits concept
+//extraction of digits
 
 void mth1(int n){
    while(n>0){
@@ -19,4 +19,28 @@ int main(){
 output:-
 1234
 4 3 2 1
+
+//counting the number of digits
+
+void mth1(int n){
+    int count=0;
+   while(n>0){
+       n=n/10;
+       count++;
+   }
+   cout<<count;
+}
+
+or,
+
+void mth1(int n){
+   int count= (int)(log10(n)+1);
+   cout<<count;
+}
+
+output:-
+21569
+5
+
+
 
