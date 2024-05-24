@@ -30,8 +30,12 @@ void mth1(int n){
    }
    cout<<count;
 }
+TC of this code is O(log10(n)), because log10(n) counts the number of times loop runs;
+whenever there is division then our TC is usually O(logx(y)) x being the divisor and y being dividend;
 
 or,
+
+//if ever using log gives you errors on coding platforms then use........#include<bits/stdc++.h> in first line;
 
 void mth1(int n){
    int count= (int)(log10(n)+1);
