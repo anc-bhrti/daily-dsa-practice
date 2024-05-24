@@ -46,5 +46,28 @@ output:-
 21569
 5
 
+//reverse number
 
+int reverse(int n){
+    int rev=0;
+    while(n>0){
+        int ld=n%10;
+        rev=(rev*10)+ld;
+        n=n/10;
+    }
+    return rev;
+}
 
+//palindrome
+void palindrome(int n){
+    int dup = n;
+    int rev = 0;
+    while(n>0) {
+        int ld=n%10;
+        rev=(rev*10)+ld;
+        n = n/10;
+    }
+    if(rev==dup) cout<<"true";
+    else cout<<"false";
+}
+or,
