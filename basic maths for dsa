@@ -71,3 +71,20 @@ void palindrome(int n){
     else cout<<"false";
 }
 or,
+
+
+
+//armstrong numbers
+
+void armstrong(int n){
+    int dup=n;
+    int arm=0;
+    while(n>0){
+        int ld=(n%10);
+        int arm=ld*ld*ld+arm;
+        n=n/10;
+    }
+    if(arm==dup) cout<<"true";
+    else cout<<"false";   
+}
+
