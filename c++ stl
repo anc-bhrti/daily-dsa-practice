@@ -1,1 +1,33 @@
+//pass by value - modifications on copy;
+//pass by reference - modifications on original address;
+
+//pass by value
+void doSomething(string s){
+   s[0]='t';
+   cout << s << endl;
+}
+int main(){
+    string s="raj";
+    doSomething(s);
+    cout << s << endl;
+}
+
+output - 
+taj
+raj
+
+//pass by referenece
+void doSomething(string &s){
+   s[0]='t';
+   cout << s << endl;
+}
+int main(){
+    string s="raj";
+    doSomething(s);
+    cout << s << endl;
+}
+
+output - 
+taj
+taj
 
