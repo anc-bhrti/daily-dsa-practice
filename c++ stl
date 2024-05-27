@@ -63,9 +63,19 @@ and vec.emplace_back(1,2);
 in emplace back we do not need to put the curly braces, it automatically assumes the data type.
 
 //ITERATOR - it pints to the memory address;
+
 vector<int> :: iterator it=v.begin();
-it = it+2;
+it++;
 cout<<*(it)<<" ";
+
+for(vector <int> :: iterator it= v.begin(); it!=v.end(); it++){
+cout<<*(it);
+}
+//we can use auto too;
+for(auto it = v.begin(); it!=v.end(); it++){
+cout<<*(it);
+}
+
 
 //iterator points to the memory address then to access the value at that memory address we use * ;
 
