@@ -75,7 +75,18 @@ cout<<*(it);
 for(auto it = v.begin(); it!=v.end(); it++){
 cout<<*(it);
 }
-
-
 //iterator points to the memory address then to access the value at that memory address we use * ;
+
+//revise all other functions from striver sheet;
+
+//LIST
+//list (ls) is same as vector, same syntaxes but it also offers fornt operations; in list insert function is costlier whereas something like push_front is cheaper
+
+//DEQUE
+//deque (dq) is also exactly same as list and vector;
+
+//STACK
+...........to be continued................
+
+
 
