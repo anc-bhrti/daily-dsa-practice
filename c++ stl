@@ -52,9 +52,20 @@ vector is dynamic in  nature
 * emplace_back is faster than push_back
 
 vector <int> vec; //declaring a vector with data type as int and name as vec;
+vector <int> v(5,100) //declaring and assigning a vector, (5,100) means that 5 instances of the element 100;
+vector <int> v(5) //decalring a variable which means 5 instances of element 0 or any garbage value;
+vector <int> v(v1) //deaclaring a variable and assigning to it a value which is copy of vector v1;
+//NOTE - even after decalring the size we can still add items in vector;
 
 vector <pair <int, int> >vec; //decalring vector with datatype pair and name as vec;
 now, vec.push_back{(1,2)};
 and vec.emplace_back(1,2);
-in emplace back we do nt need to put the curly braces, it automatically assumes the data type.
+in emplace back we do not need to put the curly braces, it automatically assumes the data type.
+
+//ITERATOR - it pints to the memory address;
+vector<int> :: iterator it=v.begin();
+it = it+2;
+cout<<*(it)<<" ";
+
+//iterator points to the memory address then to access the value at that memory address we use * ;
 
