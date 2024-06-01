@@ -1,0 +1,57 @@
+COMPLETE GIT AND GITHUB TUTORIAL 
+~ by apna college
+
+
+
+cd .. - to get out of directory
+cd <dirname> - get into directory
+git status
+git add <file name>
+git commit -m "msg" - to commit
+git push origin main - to push
+mkdir "file name" - to make new directory (file)
+git init - to include git in new directory
+ls -a - to check whether git is included then .git named folder does not appear
+git remote add origin <-link-> - to include an external repo
+git remote -v - to know which remote repo you are working on
+git branch - to check branch; different teams in a project work on different branches
+git branch -M <-new name-> -  to rename a branch you are in
+git push -u origin main - to create a shortcut; iske baad sirf git push likhna hoga
+
+WORKFLOW : GitHub repo -> clone -> changes -> add -> commit -> push
+
+git checkout <-branch name-> to navigate
+git checkout -b <-new branch name->
+git branch -d <-branch name-> - to delete branch
+
+eg-feature1 is a branch; git push origin feature1
+
+git diff <-branch name-> (to compare commits, branches, files & more)
+git merge <-branch name-> (to merge 2 branches) - you are in a branch; and want to merge another branch...write another branch name in <-branch name-> 
+
+PULL REQUEST - it lets you tell others about changes you have pushed to a branch in a repository on GitHub
+maybe any senior dev reviews your changes; if any objection, will add comments and if all right confirm your pull request
+
+PULL COMMAND - git pull origin main
+used to fetch and download content from a remote repo and immediately update local rep to match that content
+ 
+RESOLVING MERGE CONFLICTS -1:03 to  1:05
+
+UNDOING CHANGES
+Case 1: staged changes (add krne k baad staged)
+git reset <-file name->
+git reset
+
+Case 2:to undo committed changes
+git rest HEAD~1 (meaning HEAD ko reset kar do ek step; latest step ka nam HEAD)
+aisa commit karne k baad undo krenge to unstaged status
+
+
+git log - to see all commits till now
+q - to quit
+
+Case 3: committed changes (to undo many commits)
+git reset <-commit hash-> - to undo just changes nothing changes in vs code
+git reset --hard <-commit hash-> - to undo many commits and also from vs code
+
+FORK - rough copy of a code
